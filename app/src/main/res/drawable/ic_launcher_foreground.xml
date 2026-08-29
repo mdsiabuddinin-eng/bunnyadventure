@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Left Ear Outer -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,54 C34,44 32,24 42,22 C50,20 48,40 46,54 Z" />
+    <!-- Left Ear Inner -->
+    <path
+        android:fillColor="#FF80AB"
+        android:pathData="M40,50 C36,42 35,27 42,25 C47,24 46,38 44,50 Z" />
+    <!-- Right Ear Outer -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68,54 C74,44 76,24 66,22 C58,20 60,40 62,54 Z" />
+    <!-- Right Ear Inner -->
+    <path
+        android:fillColor="#FF80AB"
+        android:pathData="M68,50 C72,42 73,27 66,25 C61,24 62,38 64,50 Z" />
+    <!-- Bunny Head Outer -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,46 C38,46 32,58 32,70 C32,82 42,88 54,88 C66,88 76,82 76,70 C76,58 70,46 54,46 Z" />
+    <!-- Left Eye -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M45,64 a3.5,3.5 0 1,0 0.1,0 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,63 a1.2,1.2 0 1,0 0.1,0 Z" />
+    <!-- Right Eye -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M63,64 a3.5,3.5 0 1,0 0.1,0 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,63 a1.2,1.2 0 1,0 0.1,0 Z" />
+    <!-- Cheeks -->
+    <path
+        android:fillColor="#FF80AB"
+        android:pathData="M37,71 a3,2 0 1,0 0.1,0 Z" />
+    <path
+        android:fillColor="#FF80AB"
+        android:pathData="M71,71 a3,2 0 1,0 0.1,0 Z" />
+    <!-- Nose -->
+    <path
+        android:fillColor="#FF4081"
+        android:pathData="M54,69 L51.5,66.5 Q54,65.5 56.5,66.5 Z" />
+    <!-- Cute Carrot on side -->
+    <path
+        android:fillColor="#FF6D00"
+        android:pathData="M74,74 L84,66 C86,64 88,67 86,69 L77,80 Z" />
+    <!-- Carrot Leaves -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M85,65 C87,60 90,61 87,64 C90,63 92,66 88,66 Z" />
+    <!-- Gold Star Top Left -->
+    <path
+        android:fillColor="#FFD600"
+        android:pathData="M24,34 L26,38 L30,38.5 L27,41.5 L28,45.5 L24,43 L20,45.5 L21,41.5 L18,38.5 L22,38 Z" />
+</vector>

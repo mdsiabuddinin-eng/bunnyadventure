@@ -1,0 +1,7 @@
+{
+  "name": "Bunny Adventure",
+  "description": "A cute, colorful, and fun endless runner game for kids featuring Bunny, Puppy, Kitten, and Panda across magical worlds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
