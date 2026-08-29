@@ -20,16 +20,51 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Setup Dummy Google Services File
+    - name: Setup Android Licenses & Environment
       run: |
-        mkdir -p app
-        echo '{"project_info":{"project_number":"0","project_id":"dummy"},"client":[{"client_info":{"mobilesdk_app_id":"1:0:android:0","android_client_info":{"package_name":"com.example.bunnyadventure"}},"api_key":[{"current_key":"dummy"}]}]}' > app/google-services.json
+        yes | sdkmanager --licenses || true
+
+    - name: Create Valid Google Services File
+      run: |
+        mkdir -p app/src/debug
+        cat << 'EOF' > app/google-services.json
+        {
+          "project_info": {
+            "project_number": "123456789012",
+            "project_id": "bunnyadventure",
+            "storage_bucket": "bunnyadventure.appspot.com"
+          },
+          "client": [
+            {
+              "client_info": {
+                "mobilesdk_app_id": "1:123456789012:android:0123456789abcdef",
+                "android_client_info": {
+                  "package_name": "com.aistudio.bunnyadventure.krun"
+                }
+              },
+              "oauth_client": [],
+              "api_key": [
+                {
+                  "current_key": "dummy_api_key"
+                }
+              ],
+              "services": {
+                "appinvite_service": {
+                  "other_platform_oauth_client": []
+                }
+              }
+            }
+          ],
+          "configuration_version": "1"
+        }
+        EOF
+        cp app/google-services.json app/src/debug/google-services.json
 
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
 
-    - name: Build APK
-      run: gradle assembleDebug --stacktrace
+    - name: Build Debug APK
+      run: gradle assembleDebug --stacktrace --no-daemon
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
